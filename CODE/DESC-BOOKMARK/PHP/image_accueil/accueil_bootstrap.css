@@ -1,0 +1,292 @@
+@@charset "UTF-8";
+
+/* font-family: 'Raleway', sans-serif
+ bleu clair: #3498DB
+ bleu moyen: #2980B9
+ bleu foncé: #2C3E50
+ blanc: #ECF0F1
+ Rouge: #E74C3C
+
+*/
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  height : 100%;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/* header */
+.header {
+  background-color: #3498DB;
+  height: 70px;
+}
+
+.logo{
+  float: left;
+  padding-top: 5px;
+}
+
+#barre_de_recherche{
+  padding-top: 1.5%;
+  padding-left: 30%;
+}
+
+.home{
+  width: 5%;
+  height: 5%;
+  float:right;
+  padding-left: 10px;
+}
+
+/* bannière */
+.banner{
+  width: 100%;
+  max-width: 100%;
+}
+
+.ban{
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.ban img{
+  width: 100%;
+  max-width: 100%;
+}
+
+.inner-banner{
+  position: absolute;
+  width:100%;
+  top:15%;
+  right:5%;
+  text-align: right;
+}
+
+.inner-banner h1{
+  color: #ECF0F1;
+  text-shadow: 1px 1px 20px #EEEEEE;
+}
+
+.inner-banner .btn-custom{
+  background-color: #3498DB;
+  color: #ffffff;
+}
+
+.inner-banner .btn-custom:hover{
+  background-color: #2C3E50;
+}
+
+/* page principal */
+.panel .panel-custom{
+  text-align: center;
+}
+
+/* Panel */
+.panel-default > .panel-heading{
+  background: #3498DB;
+  color: #fff;
+  border-color: #3498DB;
+  text-align: center;
+}
+
+.panel-default > .panel-body{
+  text-align: center;
+}
+
+/* Fenêtre Tag */
+.cloud {
+    display: inline;
+    list-style-type: none;
+    width: 400px;
+}
+.cloud li {
+    list-style: none;
+    display: inline;
+}
+And then different sizes are made with a few nth-of-type combined in different variants:
+
+.cloud li:nth-of-type(3n + 1) {
+    font-size: 1.25em;
+}
+.cloud li:nth-of-type(4n+3) {
+    font-size: 1.35em;
+}
+.cloud li:nth-of-type(5n - 3) {
+    font-size: 1em;
+}
+
+.cloud a {font-family:'Raleway', sans-serif;}
+
+.cloud a:link {color:forestgreen;}
+.cloud a:visited {color:seagreen;}
+.cloud a:hover {text-decoration:none;color:yellowgreen;font-weight:bold;}
+.cloud a:active {color:red;text-decoration: none}
+
+/* Fenêtre Top Utilisateur */
+#nb_utilisateurs{
+  margin-bottom: 15px;
+}
+
+#nb_utilisateurs img{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+#nb_utilisateurs h4{
+  padding-left: 2px;
+  display: inline-block;
+}
+
+.zoom {
+-webkit-transition: all 0.35s ease-in-out;
+-moz-transition: all 0.35s ease-in-out;
+transition: all 0.35s ease-in-out;
+cursor: -webkit-zoom-in;
+cursor: -moz-zoom-in;
+cursor: zoom-in;
+}
+
+.zoom:hover,
+.zoom:active,
+.zoom:focus {
+/**adjust scale to desired size,
+add browser prefixes**/
+-ms-transform: scale(2.5);
+-moz-transform: scale(2.5);
+-webkit-transform: scale(2.5);
+-o-transform: scale(2.5);
+transform: scale(2.5);
+position:relative;
+z-index:100;
+}
+
+/* onglets */
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.tabs {
+  float: none;
+  list-style: none;
+  position: relative;
+  margin: 80px 0 0 10px;
+}
+
+.tabs li {
+  float: left;
+  display: block;
+}
+
+.tabs input[type="radio"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.tabs label {
+  display: block;
+  padding: 14px 12px;
+  border-radius: 2px 2px 0 0;
+  font-size: 19px;
+  background: #ccc;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.tabs [id^="tab"]:checked + p {
+    color:black;
+    -moz-transition: all 2.2s ease-in-out;
+    -o-transition: all 2.2s ease-in-out;
+    -webkit-transition: all 2.2s ease-in-out;
+    transition: all 2.2s ease-in-out;
+}
+.tabs label:hover {
+  background: #fff;
+}
+.tabs .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 5px;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  background: #8CAFC9;
+}
+.tabs [id^="tab"]:checked + label {
+  background: #fff;
+}
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}
+
+/* table */
+.table-filter {
+	background-color: #8CAFC9;
+	border-bottom: 1px solid #eee;
+}
+.table-filter tbody tr:hover {
+	cursor: pointer;
+	background-color: #ECF0F1;
+}
+
+/* image en_savoir_plus */
+.hoverflash figure:hover img{
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* footer */
+footer{
+  bottom: 0;
+}

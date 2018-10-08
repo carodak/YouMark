@@ -1,0 +1,544 @@
+body{
+  background-image: url("background.jpg"); no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.colonne_droit{
+  float:right;
+  width:30%;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+
+#principal{
+  float:left;
+  margin-top: 25px;
+  width:66%;
+  height:100%;
+  margin-left: 20px;
+}
+
+#centre{
+}
+
+#haut{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+  background-color: #3498db; 
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#haut #logo{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#haut h2{
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 85px;
+  position: relative;
+  top: 40%;
+  transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+}
+
+#haut #home{
+  display: inline-block;
+  margin-top: 10px;
+  padding-left: 180px;
+  width: 75px;
+  height: 75px;
+}
+
+
+/***********************Navigation par onglets*****************************/
+#onglets{
+	display: none;
+}
+		
+#onglets li{
+	float: left;
+	list-style: none;
+	padding: 2px 5px 7px;
+	margin-right: 5px;
+  margin-top: 20px;
+	border: 1px solid #1175AE;
+	cursor: pointer;
+	background-color: white;
+	color: #3498db;
+	z-index: 1;
+}
+			
+#onglets .actif{
+	border-bottom: none;
+	font-weight: bold;
+	z-index: 10;
+}
+			
+#contenu{
+	clear: both;
+	position: relative;
+	margin: 0 20px;
+	padding: 10px;
+	border: 5px solid #3498db;
+	z-index: 5;
+	top: -6px;
+	background-color: white;
+	color: #0F67A1;
+	width: 94%;
+	overflow: hidden;
+	border-radius: 15px;
+}
+
+/***********************Top Utilisateur*****************************/
+#fenetre_top_utilisateur_main{
+  margin-top:10px;
+  margin-left: 35px;
+}
+#top_utilisateur {
+  background:white;
+  width:92%;
+  height:280px;
+  border-radius:6px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 70px 0px;
+  border: #2980b9 4px solid; 
+}
+ 
+h1{
+  font-size:1.5em;
+  color:#525252;
+}
+
+#fenetre_top_utilisateur{
+  font-family: 'Open Sans', sans-serif;
+  background:#3498db;
+  margin: 0 auto 0 auto;  
+  width:95%;
+  height:370px;
+  text-align:center;
+  margin: 10px 0px 20px 0px;
+  padding: 15px 0px 0px 0px;
+  border-radius : 6px;
+}
+
+#nb_utilisateurs{
+  margin-top:7px;
+  height:15%;
+}
+
+#nb_utilisateurs img{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+#nb_utilisateurs h4{
+  padding-left: 2px;
+  display: inline-block;
+}
+
+#top_utilisateur ul {
+  list-style-type: none;
+}
+ 
+#top_utilisateur li img {
+  float: left;
+  margin: 5px;
+  border: 5px solid #fff;
+ 
+  -webkit-transition: box-shadow 0.5s ease;
+  -moz-transition: box-shadow 0.5s ease;
+  -o-transition: box-shadow 0.5s ease;
+  -ms-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+ 
+#top_utilisateur li img:hover {
+  -webkit-box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+  box-shadow: 0px 0px 7px rgba(255,255,255,0.9);
+}
+
+/**********************Barre de recherche**********************************************/
+#searchbox
+{
+    background-color: #eaf8fc;
+    background-image: linear-gradient(#fff, #d4e8ec);
+    border-radius: 35px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;            
+    width: 400px;
+    height: 35px;
+    padding: 10px;
+    overflow: hidden; 
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 5px 9px;
+    height: 23px;
+    width: 280px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);        
+}
+
+#submit
+{       
+    background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 50px 50px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 90px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+/*********************************Fenêtre de connexion******************************************/ 
+#fenetre_connexion_main{
+margin-top:10px;
+margin-left: 35px;
+}
+
+.fenetre_connexion{
+  font-family: 'Open Sans', sans-serif;
+  background:#3498db;  
+  width:95%; 
+  height:70%;
+  text-align:center;
+  padding-top:10px;
+  border-radius : 6px;
+}
+
+p{
+  font-size:12px;
+  text-decoration: none;
+  color:#ffffff;
+}
+
+h1{
+  font-size:1.5em;
+  color:#525252;
+}
+
+.connexion{
+  background:white;
+  width:300px;
+  border-radius:6px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 70px 0px;
+  border: #2980b9 4px solid; 
+}
+
+.mail, .mot_de_passe{
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  border-bottom: #ccc 2px solid;
+  padding: 8px;
+  width:250px;
+  color:#AAAAAA;
+  margin-top:10px;
+  font-size:1em;
+  border-radius:4px;
+}
+
+.password{
+  border-radius:4px;
+  background:#ecf0f1;
+  border: #ccc 1px solid;
+  padding: 8px;
+  width:250px;
+  font-size:1em;
+}
+
+.btn{
+  background:#2ecc71;
+  width:125px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+  border-radius:4px;
+  border: #27ae60 1px solid;
+  
+  margin-top:20px;
+  margin-bottom:20px;
+  float:left;
+  margin-left:80px;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+.se_souvenir_de_moi{
+  margin-top:5px;
+}
+
+/********************************************Description Liens*************************************/
+.lien_section{
+  background-color: lightblue;
+  margin-bottom: 10px;
+  margin-top: 13px;
+  text-align: center;
+}
+
+.rang{
+  display: inline-block;
+  font-family:georgia, serif;
+   color:#3B200F;
+   font-size:40px;
+   font-weight:bold;
+   text-align:center;
+   position: relative;
+   top: 80%;
+   transform: translateY(-80%);
+   webkit-transform: translateY(-80%);
+   -ms-transform: translateY(-80%);
+}
+
+.avatar{
+  display: inline-block;
+  top: 13%;
+  transform: translateY(-13%);
+  -webkit-transform: translateY(-13%);
+  -ms-transform: translateY(-13%);
+}
+
+.desc{
+  display: inline-block;
+  background-color: white;
+  width: 70%;
+  position: relative;
+  top: 20%;
+  transform: translateY(-20%);
+  -webkit-transform: translateY(-20%);
+  -ms-transform: translateY(-20%);
+  line-height: 5%;
+}
+
+.desc .titre{
+  font-family: 'Enriqueta', arial, serif; 
+  font-size: 16px; 
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.desc img{
+  width:18px;
+  height:18px;
+  vertical-align: middle;
+}
+
+.note img{
+  width:100px;
+  height:30px;
+}
+
+.item_haut{
+  padding-top: 15px;
+}
+
+.note{
+  display: inline-block;
+  position: relative;
+  top: 5%;
+  transform: translateY(-5%);
+  -webkit-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+}
+
+.suivant h4{
+  display: inline-block;
+}
+
+.suivant img{
+  width:120px;
+  height:40px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.heure{
+  color: black; 
+  font-family: 'Droid serif', serif; font-size: 14px; 
+  font-style: italic; 
+  padding-top: -15px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.description{
+  font-family: 'Enriqueta', arial, serif; 
+  font-size: 15px; 
+  font-weight: bold;
+  color: black;
+  text-align: left;
+  margin-left: 15px;
+}
+/*******************************Bouton Ajouter**********************************/
+.animate
+{
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+  padding: 7px 35px;
+  margin: 10px 0px 10px 125px;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;  
+  display: inline-block;
+}
+
+.blue
+{
+  background-color: #3498DB;
+  border-bottom: 5px solid #2980B9;
+  text-shadow: 0px -2px #2980B9;
+}
+
+.action-button:active
+{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+/************************************Tags Cloud************************************/
+#fenetre_tag_main{
+  margin-top:10px;
+  margin-left: 35px;
+
+}
+#top_tag{
+  background:white;
+  width:93%;
+  height:240px;
+  border-radius:6px;
+  margin: 0 auto 0 auto;
+  padding:0px 0px 70px 0px;
+  border: #2980b9 4px solid; 
+}
+
+#fenetre_tag{
+  font-family: 'Open Sans', sans-serif;
+  background:#3498db;
+  margin: 0 auto 0 auto;  
+  width:95%;
+  height:325px;
+  text-align:center;
+  margin: 10px 0px 20px 0px;
+  padding: 15px 0px 0px 0px;
+  border-radius : 6px;
+}
+
+.cloud {
+    display: inline;
+    list-style-type: none;
+    width: 400px;
+}
+.cloud li {
+    list-style: none;
+    display: inline;
+}
+And then different sizes are made with a few nth-of-type combined in different variants:
+
+.cloud li:nth-of-type(3n + 1) {
+    font-size: 1.25em;
+}
+.cloud li:nth-of-type(4n+3) {
+    font-size: 1.5em;
+}
+.cloud li:nth-of-type(5n - 3) {
+    font-size: 1em;
+}
+
+.cloud a {
+  font-family:
+  Georgia,serif;}
+
+.cloud a:link {color:forestgreen;}
+.cloud a:visited {color:seagreen;}
+.cloud a:hover {text-decoration:none;color:yellowgreen;font-weight:bold;}
+.cloud a:active {color:red;text-decoration: none}
+
+/************************footer***********************************************/
+footer{
+  height:200px;
+  width:100%;
+  background-color: #3498db; 
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*******************************Select Box**************************************/
+.dropdown select {
+   background: transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
+   .dropdown {
+   width: 175px;
+   height: 30px;
+   overflow: hidden;
+   background: url(new_arrow.jpg) no-repeat right #ddd;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   margin-top: 5px;
+   margin-bottom: 15px;
+   }
+
+
+

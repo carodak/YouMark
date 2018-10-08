@@ -1,0 +1,251 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+.mine{
+
+	float:right;
+	
+	width:370px;
+    overflow:hidden;
+    display:inline-block;
+	 font-size: 17px;
+}
+
+
+.red{
+	color:red;
+}
+
+.form-area
+{
+	background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 2px outset #428BCA;
+}
+
+.btn-success {
+
+}
+
+.active{
+
+}
+
+#datepicker, #datepicker2{
+	width:170px;
+}
+
+.container
+{
+    width:800px;
+    overflow:hidden;
+    display:inline-block;
+   
+   
+}
+
+.formulaire_date{
+   padding-left: 10px;
+   padding-right: 10px;
+
+}
+
+.formulaire
+{ 
+     padding-left: 10px;
+     padding-right: 10px;
+}
+
+.formulaire_popularite
+{ 
+     padding-left: 2px;
+     padding-right: 2px;
+}
+
+.side-bar
+{
+    background:#346796;
+    position:absolute;
+    width:370px;
+    height:100%;
+    transition: margin-left 0.5s;
+}
+
+
+.side-bar ul
+{
+    list-style:none;
+    padding:0px;
+
+    
+}
+
+.side-bar ul li.menu-head
+{
+    font-family: 'Lato', sans-serif;
+    padding:20px;
+    color:#fff;
+}
+
+
+.side-bar ul li.menu-head a
+{
+    color:#fff;
+    text-decoration:none;
+    height:50px;
+}
+
+
+.side-bar ul .menu-head  a
+{
+    color:#fff;
+    text-decoration:none;
+    height:50px;
+}
+
+.side-bar ul .menu li  a.classique 
+{ 
+    color:#fff;
+    display:inline-table;
+    text-decoration:none;
+    width:100%;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+
+.side-bar ul .menu li a:hover
+{
+        
+   
+}
+
+.side-bar ul .menu li.active  a
+{
+    padding-left:17px;
+    background:#97B9CA;
+    border-left:3px solid #ECECEA;
+    margin-bottom:1px;
+}
+
+.side-bar ul .menu li.active  a:before {
+   content:"";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    
+	border-left: 7px solid #97B9CA;
+    margin-top: -10px;
+    margin-left: 180px;
+}
+
+
+.content
+{
+    padding-left: 200px;
+    transition: padding-left 0.5s;
+}
+
+.active > .side-bar
+{
+    margin-left:-150px;   
+    transition: margin-left 0.5s;
+}
+
+.active > .content
+{
+    padding-left:50px;
+    transition: padding-left 0.5s;
+}
+
+
+.menu li ul.parent
+{
+    display:none;
+    transition: all 3s;
+}
+
+.menu li.active ul.parent
+{
+    display:block;
+    transition: all 3s;
+}
+
+
+.menu li ul.parent li a
+{
+    padding-left:40px;
+    border-left:0px;
+    background:#6590A5;
+}
+
+.menu li ul.parent li.active a
+{
+    padding-left:39px;
+    background:#40728A;
+    border-left:1px solid #ECECEA;
+    margin-bottom:1px;
+}
+
+.menu li ul.parent li a:hover
+{
+    padding-left:39px;
+    border-left:1px solid #ECECEA;
+}
+
+.menu ul.parent li.active a:before,.menu li.active ul.parent li a:before
+{
+    border:0px;
+}
+
+.p2 {
+     width: 370px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+/* Fenêtre Tag */
+.cloud {
+    display: inline;
+    list-style-type: none;
+    width: 300px;
+}
+.cloud li {
+    list-style: none;
+    display: inline;
+}
+
+
+.cloud li:nth-of-type(3n + 1) {
+    font-size: 1.25em;
+}
+.cloud li:nth-of-type(4n+3) {
+    font-size: 1.35em;
+}
+.cloud li:nth-of-type(5n - 3) {
+    font-size: 1em;
+}
+
+
+.cloud a.couleur_ac {font-family:'Raleway', sans-serif;}
+
+.cloud a:link {color:forestgreen;}
+.cloud a:visited {color:#2980B9;}
+.cloud a:hover {text-decoration:none;color:yellowgreen;font-weight:bold;}
+.cloud a:active {color:red;text-decoration: none}
+
+.tag-list li{
+  float:left;
+}
+
+.astext {
+    background:none;
+    border:none;
+    
+}

@@ -1,0 +1,103 @@
+﻿@import url('reset.css');
+body {
+	background-color: #f0f0f0;
+	font-family: helvetica, "Vercana", Times, serif;
+}
+a:focus {
+	outline: none;
+}
+.clear {
+	clear: both;
+}
+#page-wrap {
+	position: relative;
+	width: 760px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+}
+ul#main-nav {
+	margin-top: 40px;
+	margin-left: 20px;
+}
+ul#main-nav li {
+	float: left;
+	position: relative;
+	margin-left: -20px;
+	display: inline;
+}
+ul#main-nav li a {
+	position: relative;
+	width: 140px;
+	height: 41px;
+	display: block;
+	background-image: url('../image_accueil/tabs.png');
+	background-position: center center;
+	color: #44403b;
+	text-decoration: none;
+	font-size: 14px;
+	padding-top: 3px;
+	text-align: left;
+	padding-left: 15px;
+	font-weight: bold;
+}
+ul#main-nav li.nouveaute a {
+	background-image: url('../image_accueil/tab-home.png');
+}
+ul#main-nav li.current a {
+	background-position: top;
+	color: #ffffff;
+}
+ul#main-nav li a:hover {
+	background-position: bottom;
+	color: #ffffff;
+}
+ul#main-nav li.current a:hover {
+	background-position: top; /*To Prevent the Current tab from changing colour on hover*/
+	color: #ffffff;
+}
+ul#main-nav li.current {
+	z-index: 100;
+}
+ul#main-nav li.nouveaute {
+	z-index: 100;
+}
+ul#main-nav li.populaire {
+	z-index: 99;
+}
+ul#main-nav li.mieux_commente {
+	z-index: 98;
+}
+ul#main-nav li.mieux_note{
+	z-index: 97;
+}
+
+
+#featured {
+	position: relative;
+	background-color: #A5A7AA;
+	background-image: url('../images/featured-border.jpg');
+	background-repeat: repeat-y;
+	background-position: left;
+	height: 1000px;
+	color: #000000;
+	border-radius: 3px 0;
+	border: solid 0.8px #577295;
+}
+#featured h1 {
+	font-size: 24px;
+	position: relative;
+	margin-bottom: 17px;
+}
+#featured p {
+	line-height: 18px;
+	font-size: 12px;
+}
+#featured-content{
+	float: right;
+	position: relative;
+	margin-top: 30px;
+	margin-right: 35px;
+	margin-left: 10px;
+	display: inline;
+}

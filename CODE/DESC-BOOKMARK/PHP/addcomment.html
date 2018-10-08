@@ -1,0 +1,56 @@
+
+
+
+<html>
+
+
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+<link href="rating/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="rating/js/star-rating.js" type="text/javascript"></script>
+<link href="rating/themes/krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+<script src="rating/themes/krajee-svg/theme.js"></script>
+
+
+<head>
+</head>
+<body>
+
+
+
+
+<div class="col-sm-4 well">
+<h3> Ajouter votre commentaire</h3>
+
+<html>
+<head>
+    <title>Commentez!</title>
+</head>
+<body>
+
+
+   <iframe name="redirection" width="0" height="0" border="0" style="display: none;"></iframe> 
+  <form accept-charset="UTF-8" action="addcomment.php" target="" method="POST">
+
+
+    	<label for="input-1" class="control-label">Mettre une note</label>
+		<input id="input-1" name="note" class="rating rating-loading" data-min="0" data-max="5" data-step="1">
+        <textarea class="form-control" id="text" name="libelle_c" placeholder="Votre commentaire..." rows="5"></textarea>
+        <h6 class="pull-right" id="count_message"></h6>
+        <button class="btn btn-info" type="submit">Poster</button>
+
+
+    </form>
+</div>
+</body>
+</html>
+
+<script>
+
+$( document ).ready(function() {
+$("#input-1").rating();
+});
+
+
+
+</script>

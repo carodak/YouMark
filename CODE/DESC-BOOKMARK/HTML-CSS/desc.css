@@ -1,0 +1,8 @@
+body {
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pics.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pics.jpg', sizingMethod='scale')";
+}
+
+textarea {
+    resize: none;
+}

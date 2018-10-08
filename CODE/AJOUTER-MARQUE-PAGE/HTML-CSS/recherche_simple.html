@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Recherche simple</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+}
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+        max-width: 500px;
+    }
+}
+
+::-webkit-input-placeholder {
+    color:red;
+}
+
+::-moz-placeholder {
+    color:red;
+}
+
+::-ms-placeholder {
+    color:red;
+}
+
+::placeholder {
+    color:red;
+}
+
+
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body> 
+<form class="form-horizontal" method='post' role="form" action='../../ACCUEIL/resultats_recherche.php' name="formulaire_recherche">
+    		<div class="col-md-6">
+                <div class="input-group" id="adv-search">
+                    <input type="text" id="rch" class="form-control" name="contenu_recherche" placeholder="" />
+                    <div class="input-group-btn">
+                        <div class="btn-group" role="group">
+                            <div class="dropdown dropdown-lg">
+                                
+                               
+                            </div>
+     
+                            <input type="submit" class="btn btn-primary" value="Rechercher" name="envoi_form1"> 
+                            <!-- On applique ici un style graphique particulier au bouton de recherche, afin de pouvoir récupérer les données du formulaire (le bouton ne le permet pas), on utilise un imput caché  
+                             <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                            <input type="hidden" name="env" value="" />
+                            <button type="submit" onclick="location.href='recherche_avancee.php'" class="btn btn-primary" name="env"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>-->
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+</form>
+<script type="text/javascript">
+document.getElementById("rch").placeholder="Rechercher (titre, tag, pseudo)";
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.mine{
+	position:absolute;
+	left:65%;
+	top:31%;
+	
+}
+
+
+.red{
+	color:red;
+}
+
+.form-area
+{
+	background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 2px outset #428BCA;
+}
+
+.btn-success {
+
+}
+
+.active{
+
+}
+
+#datepicker{
+
+}
