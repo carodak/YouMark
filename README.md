@@ -2,7 +2,7 @@ Realization: Youtube channels sharing website
 
 Used tools: HTML, CSS, PHP, Bootstrap (bootsnip), Javascript
 
-Please kindly notice that the game was created during my third year of bachelor. We were a team of 4 people and had (at the time) written classes and comments in French.
+Please kindly notice that the website was created during my third year of bachelor. We were a team of 4 people and had (at the time) written classes and comments in French.
 
 Objective:
 
