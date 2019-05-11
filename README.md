@@ -14,4 +14,4 @@ See our report for more information.
 
 ![alt text](accueil.png)
 
-Personal note: I think we did an amazing work! We grew from our previous project, specially in term of writting. It is understandable for someone that have not knowledge in computer science. The report shows a real reflection, we implemented a lot of cool features! I am currently reviewing that 2 years later, and I am impressed with what we did.
+Personal note: I think we did an amazing work! We grew up from our previous project, specially in term of writting. It is understandable for someone that have not knowledge in computer science. The report shows a real reflection, we implemented a lot of cool features! I am currently reviewing that 2 years later, and I am impressed with what we did.
